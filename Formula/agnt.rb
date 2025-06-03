@@ -1,26 +1,26 @@
 class Agnt < Formula
   desc "Terminal chat client for Anthropic's Claude API"
   homepage "https://github.com/pheuter/agnt"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/pheuter/agnt/releases/download/v#{version}/agnt-x86_64-apple-darwin.tar.gz"
-      sha256 "26ddda4dbe8159de1e435ba348027fd4d90c9d80882362875ae1f16afd62b5ba"
+      sha256 "0cbe682a556c1302b6e8e1f3f7f4c25e44d9c3bcf09820ec94c46316242e9171"
     else
       url "https://github.com/pheuter/agnt/releases/download/v#{version}/agnt-aarch64-apple-darwin.tar.gz"
-      sha256 "c6fc8e8b9f0e90c919efdfd3752a4aa2b9f432b7e804564f75b842b4ba6c1c72"
+      sha256 "9e836165a2725409892589da2b106120d816762b890dc88683e5d94a3d893647"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/pheuter/agnt/releases/download/v#{version}/agnt-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "6bd3d2ea541b8b63f59b606ef340be46596536fbca6f1476930552c7a0e4b912"
+      sha256 "099b143eeb2fb62a3798529ed14c4bdf55999326cee912f3611b59a62e0b903e"
     else
       url "https://github.com/pheuter/agnt/releases/download/v#{version}/agnt-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "d555ca54f3abb9afff7044f2ef428f37e78cacbeb27ae6a549c516c9348c19c0"
+      sha256 "902927819f48e838eec61e4f7f1c2dee4c08158bab2e0f7d788e882572c72bab"
     end
   end
 
